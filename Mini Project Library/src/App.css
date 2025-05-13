@@ -1,0 +1,295 @@
+/* === Global Variables for Theming === */
+:root {
+  --light-bg: #f8f9fa;
+  --light-text: #202124;
+  --light-sidebar: #ffffff;
+  --light-hover: #e8f0fe;
+  --light-border: #dadce0;
+  --light-input: #ffffff;
+
+  --dark-bg: #121212;
+  --dark-text: #e8eaed;
+  --dark-sidebar: #202124;
+  --dark-hover: #3c4043;
+  --dark-border: #3c4043;
+  --dark-input: #303134;
+}
+
+/* === Theme Classes === */
+.dark {
+  --bg: var(--dark-bg);
+  --text: var(--dark-text);
+  --sidebar: var(--dark-sidebar);
+  --hover: var(--dark-hover);
+  --border: var(--dark-border);
+  --input: var(--dark-input);
+}
+
+.light {
+  --bg: var(--light-bg);
+  --text: var(--light-text);
+  --sidebar: var(--light-sidebar);
+  --hover: var(--light-hover);
+  --border: var(--light-border);
+  --input: var(--light-input);
+}
+
+/* === Global === */
+body,
+.dark,
+.light {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: var(--sidebar);
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans the entire width */
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  background-color: var(--hover);
+  color: var(--text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: var(--hover);
+}
+
+/* === Sidebar === */
+.sidebar {
+  background-color: var(--sidebar);
+  color: var(--text);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Adjust top padding to account for fixed navbar height */
+  padding-top: calc(0.5rem * 2 + 1.5rem + 0.5rem); /* Top padding + logo height + bottom padding */
+}
+
+.item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.item:hover {
+  background-color: var(--hover);
+}
+
+/* === Main Content === */
+.main-content {
+  margin-left: 250px;
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+  /* Add padding at the top to prevent overlap with the fixed navbar */
+  padding-top: calc(0.5rem * 2 + 1.5rem + 1rem); /* Navbar top/bottom padding + logo height + main content top padding */
+}
+
+/* === Book Grid === */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+/* === Book Card === */
+.book-card {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.file-icon {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.book-info {
+  flex-grow: 1;
+}
+
+.book-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.book-info p {
+  font-size: 0.875rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.book-info .due {
+  color: #d32f2f;
+}
+
+.add-button {
+  background-color: var(--hover);
+  color: var(--text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-self: flex-start;
+}
+
+.add-button:hover {
+  background-color: #81c784;
+  color: white;
+}
+
+.book-card h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* === Branch Grid === */
+.branch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+/* === Base Branch Card Styles === */
+.branch-card {
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  color: var(--text);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 120px; /* Fixed height for consistent card size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branch-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* === Branch-Specific Styles === */
+.branch-card-comps {
+  background-color: #e6ee9c;
+}
+
+.branch-card-it {
+  background-color: #ffcc80;
+}
+
+.branch-card-cse-ds {
+  background-color: #80deea;
+}
+
+.branch-card-ai-ds {
+  background-color: #cf93d9;
+}
+
+.branch-card-ai-ml {
+  background-color: #f48fb1;
+}
+
+.branch-card-extc {
+  background-color: #a5d6a7;
+}
+
+.branch-card-mech {
+  background-color: #bcaaa4;
+}
+/* App.css */
+
+/* ... other styles ... */
+
+.book-grid .book-item {
+  /* Add any specific styling for clickable book items in the issued books grid */
+  /* For example: */
+  border: 1px solid var(--border); /* Ensure a border */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-grid .book-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Basic modal styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Ensure it's on top */
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+.modal button {
+  background-color: var(--hover);
+  color: var(--text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal button:hover {
+  background-color: #78909c; /* A slightly darker shade */
+  color: var(--text);
+}
