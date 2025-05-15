@@ -1,0 +1,397 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#skil{
+    color: #000000;
+}
+#achi{
+    color: #000000;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #e74c3c;
+}
+
+/* Hero Section */
+#home {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    padding: 80px 0;
+    text-align: center;
+    color: #000;
+}
+
+.about-card {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: left;
+}
+
+.about-card h3 {
+    color: #4ca1af;
+    margin-bottom: 15px;
+}
+
+/* Internship and Certification Cards */
+.intern-card, .cert-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.intern-card:hover, .cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.intern-card h3, .cert-card h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.cert-card a {
+    color: #4ca1af;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cert-card a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section */
+#projects {
+   background: linear-gradient(120deg, #1c1c1c, #4ca1af, #dfe9f3);
+
+    padding: 80px 0;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #4ca1af;
+}
+
+#skills {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tech-icons i,
+.tech-icons img {
+    font-size: 2rem;
+    color: #555;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+#contact a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Style for the name container */
+.loading-name {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  
+/* Style for each letter */
+  .letter {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  /* Delay each letter animation */
+  .letter:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .letter:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .letter:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .letter:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .letter:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .letter:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  .letter:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+  .letter:nth-child(8) {
+    animation-delay: 1.6s;
+  }
+  
+  /* Keyframes for the fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/* Contact Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    border-color: #4ca1af;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 161, 175, 0.5);
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+#contact-form button {
+    padding: 12px 30px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact-form button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 2rem;
+    width: 80%;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

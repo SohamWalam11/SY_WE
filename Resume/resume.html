@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham Walam | Portfolio</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <div class="container">
+            <div class="load-name">
+                <span class="letter">S</span>
+                <span class="letter">o</span>
+                <span class="letter">h</span>
+                <span class="letter">a</span>
+                <span class="letter">m</span>
+                <span class="letter">&nbsp;</span>
+                <span class="letter">W</span>
+                <span class="letter">a</span>
+                <span class="letter">l</span>
+                <span class="letter">a</span>
+                <span class="letter">m</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Hello, I'm <span class="highlight">Soham Walam</span></h2>
+            <p>Data Science Enthusiast | ML, AI, and Robotics | Passionate about Data-Driven Solutions</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-card">
+                <h3>Who Am I?</h3>
+                <p>BTech in CSE (Data Science) at DJ Sanghvi. Experienced in Web Development, ML, AI, and Data Analytics.</p>
+            </div>
+
+            <!-- Internship Section -->
+            <div class="intern-card">
+                <img src="https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/deloitte/us-deloitte-logo.jpg" height="60px" width="60px">
+                <h3>Data Analyst Internship at Deloitte</h3>
+                <p>Developed interactive Tableau dashboards and contributed to data analysis and visualization tasks.</p>
+            </div>
+
+            <div class="intern-card">
+                <img src="bcg_x.png" height="60px" width="80px">
+                <h3>Data Science Intern at BCG X</h3>
+                <p>Developed customer analysis and provided several insights into the data.</p>
+            </div>
+
+            <!-- Certification Section -->
+            <div class="cert-card">
+                <h3>Certifications</h3>
+                <ul>
+                    <li><a href="https://certification-link1.com" target="_blank">ArcGIS Python | Spatial Data Science</a></li>
+                    <li><a href="https://certification-link2.com" target="_blank">Machine Learning Bootcamp (S4DS)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Traffic Prediction</h3>
+                <p>Using ML, Flask, and Scikit-Learn</p>
+            </div>
+            <div class="project">
+                <h3>Spotify Clone</h3>
+                <p>UI using HTML, CSS, JS, and Spotify API.</p>
+            </div>
+            <div class="project">
+                <h3>COVID-19 Prediction</h3>
+                <p>Flask and ML model to predict affected rates globally.</p>
+            </div>
+            <div class="project">
+                <h3>Library Management System</h3>
+                <p>HTML, CSS, JS, and SQLite for DB connection.</p>
+            </div>
+        </div>
+    </section>
+<!-- Achievements Section -->
+<section id="achievements">
+    <div class="container">
+        <h2 id="achi" style="color:black">Achievements</h2>
+
+        <div class="achievement-card" onclick="showAchievement('iitkgp')">
+            <h3 style>1st Place – Hackathon at IIT Kharagpur</h3>
+            <p>Click for more details</p>
+        </div>
+
+        <div class="achievement-card" onclick="showAchievement('analytics')">
+            <h3>Top 10 – ML Challenge by Analytics Vidhya</h3>
+            <p>Click for more details</p>
+        </div>
+
+        <div class="achievement-card" onclick="showAchievement('gcloud')">
+            <h3>Certificate of Excellence – Google Cloud Study Jam</h3>
+            <p>Click for more details</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Project/Achievement Details -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Modal Title</h2>
+        <p id="modalDescription">Modal description goes here.</p>
+    </div>
+</div>
+
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="skills-container">
+        <h2 id="skil">Technical Skills</h2>
+        <div class="skills-grid">
+            <!-- Web Development -->
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <div class="tech-icons">
+                    <i class="fab fa-html5" title="HTML5"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" title="HTML5" width="40" height="40"></i>
+                    <i class="fab fa-css3-alt" title="CSS3"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" title="CSS3" width="40" height="40">
+</i>
+                    <i class="fab fa-js" title="JavaScript"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" title="JavaScript" width="40" height="40">
+</i>
+                    <i class="fab fa-react" title="ReactJS"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS" title="ReactJS" width="40" height="40">
+</i>
+                    <i class="fab fa-node" title="Node.js"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" title="Node.js" width="40" height="40">
+</i>
+                    <i class="fas fa-database" title="MongoDB"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" title="MongoDB" width="40" height="40">
+</i>
+                    <i class="fab fa-vuejs" title="Vue.js"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" title="Vue.js" width="40" height="40">
+</i>
+                    <i class="fab fa-bootstrap" title="Bootstrap"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap" title="Bootstrap" width="40" height="40">
+</i>
+                    <i class="fab fa-css3" title="Tailwind CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" title="Tailwind CSS" width="40" height="40">
+</i>
+
+                </div>
+            </div>
+
+            <div class="skill-card">
+    <h3>Machine Learning & Data Science</h3>
+    <div class="tech-icons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" title="Python" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy" title="NumPy" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas" title="Pandas" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" title="Matplotlib" width="40" height="40">
+        <img src="https://blog.f1000.com/wp-content/uploads/2017/07/logo.png" alt="Plotly" title="Plotly" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" title="Scikit-learn" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow" title="TensorFlow" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" title="Keras" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg" alt="SciPy" title="SciPy" width="40" height="40">
+        <!-- PyTorch Logo -->
+<img src="https://pytorch.org/assets/images/pytorch-logo.png" alt="PyTorch" title="PyTorch" width="100" height="100">
+
+<!-- FastAPI Logo -->
+<img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI" title="FastAPI" width="100" height="100">
+
+    </div>
+</div>
+
+
+            <!-- Database Management -->
+<div class="skill-card">
+    <h3>Database Management</h3>
+    <div class="tech-icons">
+        <!-- SQL Logo -->
+    <img src="https://cdn.iconscout.com/icon/free/png-256/sql-4-190807.png" alt="SQL" title="SQL" width="50" height="50">
+
+<!-- MongoDB Logo -->
+<img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" alt="MongoDB" title="MongoDB" width="50" height="50">
+
+        <img src="https://cdn.iconscout.com/icon/free/png-256/mysql-3521596-2945040.png" alt="MySQL" title="MySQL" width="50" height="50">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png" alt="PostgreSQL" title="PostgreSQL" width="50" height="50">
+    </div>
+</div>
+
+<!-- Cloud Services -->
+<div class="skill-card">
+    <h3>Cloud Services</h3>
+    <div class="tech-icons">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/aws-1869025-1583149.png" alt="AWS" title="AWS" width="50" height="50">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/microsoft-azure-1868965-1583124.png" alt="Azure" title="Azure" width="50" height="50">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/google-cloud-2038785-1721675.png" alt="Google Cloud" title="GCP" width="50" height="50">
+    </div>
+</div>
+
+<!-- Hosting Services -->
+<div class="skill-card">
+    <h3>Hosting Services</h3>
+    <div class="tech-icons">
+        <img src="https://www.netlify.com/v3/img/components/logomark.png" alt="Netlify" title="Netlify" width="50" height="50">
+        <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" title="Vercel" width="50" height="50">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Pages" title="GitHub Pages" width="50" height="50">
+    </div>
+</div>
+
+    </div>
+</section>
+
+
+    <!-- Contact Form -->
+    
+    <form id="contact-form">
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:soham.walam2005@gmail.com">soham.walam2005@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/soham-walam-b82446296/" target="_blank">LinkedIn</a></p>
+            <p><i class="fab fa-linkedin"></i> GitHub: <a href="https://github.com/SohamWalam11" target="_blank">GitHub</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Soham Walam | All Rights Reserved</p>
+            <p>Contact me at: +91 9987236183</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Non-functional now) -->
+    <button id="scrollToTop" title="Go to top">⬆️</button>
+<script src="resume.js"></script>
+</body>
+</html>
